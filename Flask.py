@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
+try:
+    from flask import Flask
+except:
+    import os
+    os.system("pip install flask")
+
+
 from flask import Flask
+
 
 app = Flask(__name__)
 
